@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LIU RONGKAI, CUMTB, LIC=JDALQ-N5PGI-PFGIX-H6J5C-Q06Q7-0SNR8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.15.0
+Toolchain Path:  E:\KEIL515\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.15.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+E:\STMProject\Parkinson_BLE\BLE_Hand_UCOSIII\USER\Template.uvprojx
+Project File Date:  07/03/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'E:\KEIL515\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+mpu9250.h(296): warning:  #1-D: last line of file ends without a newline
+  void MPU9250_MPU9250sleep(void);
+KEY.h(1): warning:  #1-D: last line of file ends without a newline
+  void KEY_Init();
+KEY.h(1): warning:  #1295-D: Deprecated declaration KEY_Init - give arg types
+  void KEY_Init();
+Power.h(5): warning:  #1-D: last line of file ends without a newline
+  u8 Check_WKUP(void);
+main.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+mpu9250.h(296): warning:  #1-D: last line of file ends without a newline
+  void MPU9250_MPU9250sleep(void);
+Power.h(5): warning:  #1-D: last line of file ends without a newline
+  u8 Check_WKUP(void);
+stm32f10x_it.c(245): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+                BLE1.DataReceive = Uart1_Buffer;                                                          //?????ý¾?
+stm32f10x_it.c(306): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+                BLE2.DataReceive = Uart3_Buffer;                                                                //?????ý¾?
+stm32f10x_it.c: 4 warnings, 0 errors
+compiling mpu9250.c...
+mpu9250.h(296): warning:  #1-D: last line of file ends without a newline
+  void MPU9250_MPU9250sleep(void);
+mpu9250.c(426): warning:  #550-D: variable "temp" was set but never used
+    uint8_t temp = 0;
+mpu9250.c: 2 warnings, 0 errors
+compiling Task.c...
+mpu9250.h(296): warning:  #1-D: last line of file ends without a newline
+  void MPU9250_MPU9250sleep(void);
+Task.c(42): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(96): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(118): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(140): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(162): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(192): warning:  #177-D: variable "aaa" was declared but never referenced
+                char aaa = BLE1.DataReceive[0];
+Task.c(210): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(230): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(257): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c(277): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        CPU_SR_ALLOC();
+Task.c: 11 warnings, 0 errors
+compiling Power.c...
+Power.h(5): warning:  #1-D: last line of file ends without a newline
+  u8 Check_WKUP(void);
+mpu9250.h(296): warning:  #1-D: last line of file ends without a newline
+  void MPU9250_MPU9250sleep(void);
+Power.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=61104 RO-data=1204 RW-data=356 ZI-data=16996  
+FromELF: creating hex file...
+"..\OBJ\MALLOC.axf" - 0 Error(s), 23 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\STMProject\Parkinson_BLE\BLE_Hand_UCOSIII\USER\RTE
+  E:\KEIL515\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
